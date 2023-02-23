@@ -32,3 +32,18 @@ function resolveAfter2Seconds() {
 
 
 console.log(doTasksWithoutWaiting());
+
+
+async function basicAsync() {
+    return await Promise.resolve(123); // Da nam 123 jako dane
+}
+
+async function asyncWaitAll() {
+    return await Promise.all([basicAsync]) // Zwróci nam tablice kadego wyniku, np "123"
+}
+
+asyncCall() // wywołujemy funkcje
+
+
+
+
